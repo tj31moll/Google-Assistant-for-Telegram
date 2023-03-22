@@ -1,13 +1,7 @@
-import os
-
 ASSISTANT_API_ENDPOINT = 'embeddedassistant.googleapis.com'
 DEFAULT_GRPC_DEADLINE = 60 * 3 + 5
-BOT_TOKEN = os.environ.get('BOT_TOKEN')
-ALLOWED_CHAT_IDS = list(
-        map(int, os.environ.get('ALLOWED_CHAT_IDS').split(','))
-        )
-AUTHORIZED_USER_IDS = list(
-        map(int, os.environ.get('AUTHORIZED_USER_IDS').split(','))
-        )
-DEVICE_MODEL_ID = os.environ.get('DEVICE_MODEL_ID')
-DEVICE_ID = os.environ.get('DEVICE_ID')
+BOT_TOKEN = '<your_bot_token>'
+ALLOWED_CHAT_IDS = [<allowed_chat_id1>, <allowed_chat_id2>, ...]
+AUTHORIZED_USER_IDS = [<authorized_user_id1>, <authorized_user_id2>, ...]
+DEVICE_MODEL_ID = '<your_device_model_id>'
+DEVICE_ID = '<your_device_id>'
